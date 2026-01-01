@@ -6,6 +6,9 @@
     "allowImportingTsExtensions": true,
     "noEmit": true
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
     "node_modules"
   ]
