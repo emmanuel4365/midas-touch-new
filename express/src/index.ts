@@ -1,9 +1,10 @@
 import express from "express";
+import name from "./userName/userName.ts";
 
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello Express!");
+  res.send(`Hello, World ${name}!`);
 });
 
 app.get("/api/users/:id", (req, res) => {
