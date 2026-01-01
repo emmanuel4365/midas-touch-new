@@ -4,7 +4,7 @@ import name from "./userName.ts";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send(`Hello, Worlds ${name}!`);
+  res.send(`Hello, Worldss ${name}!`);
 });
 
 app.get("/api/users/:id", (req, res) => {
