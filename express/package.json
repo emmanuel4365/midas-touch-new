@@ -1,9 +1,6 @@
 {
   "name": "express",
   "type": "commonjs",
-  "scripts": {
-    "vercel-build": "echo midas touch"
-  },
   "dependencies": {
     "express": "5.1.0"
   },
