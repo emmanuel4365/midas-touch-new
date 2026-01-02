@@ -18,7 +18,7 @@ app.get("/api/posts/:postId/comments/:commentId", (req, res) => {
   res.json({ postId: req.params.postId, commentId: req.params.commentId });
 });
 
-app.use("*", (req, res) => {
+app.use((req, res) => {
   res.status(404).send("Route not found");
 });
 
