@@ -1,5 +1,5 @@
 import express from "express";
-import name from "./userName.ts";
+import name from "./userName";
 
 const app = express();
 

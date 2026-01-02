@@ -1,6 +1,6 @@
 {
   "name": "express",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "vercel-build": "echo midas touch"
   },
