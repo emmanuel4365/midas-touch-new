@@ -1,6 +1,9 @@
 {
   "name": "express",
   "type": "module",
+  "scripts": {
+    "vercel-build": "echo midas touch"
+  },
   "dependencies": {
     "express": "5.1.0"
   },
