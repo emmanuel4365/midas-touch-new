@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Button = () => {
     return (
         <div>
-            <Link to="/api">Button</Link>
+            <a href="/api">Button</a>
         </div>
     );
 };
