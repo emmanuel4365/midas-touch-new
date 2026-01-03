@@ -1,8 +1,9 @@
 {
-  "rewrites": [
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://midas-touch-new.vercel.app/api/(.*)"
+      "source": "/api",
+      "destination": "https://midas-touch-new.vercel.app/api"
     }
   ]
 }
