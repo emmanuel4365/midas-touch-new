@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://api.example.com/api/(.*)"
+      "destination": "https://midas-touch-new.vercel.app/api/(.*)"
     }
   ]
 }
