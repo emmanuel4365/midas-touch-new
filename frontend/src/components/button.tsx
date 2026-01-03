@@ -3,7 +3,7 @@
 const Button = () => {
     return (
         <div>
-            <a href="/api">Button</a>
+            <a href={`/api`}>Button</a>
         </div>
     );
 };
