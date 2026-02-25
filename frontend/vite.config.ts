@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://midas-touch-new.vercel.app/api",
+        target: "https://midas-touch-new-uat-backend.vercel.app/",
         changeOrigin: true,
         rewrite: (path: string) => path.replace(/^\/api/, ""),
       },
