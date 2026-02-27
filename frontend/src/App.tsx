@@ -13,9 +13,8 @@ const LandingPage = lazy(() => import("./pages/LandingPage"));
 const routes = createBrowserRouter([
     {
         path: "/",
-        element: <Suspense fallback="Loading...">
-            <HomePage />
-        </Suspense>,
+        element: <Suspense fallback={<div>Loading...</div>}><HomePage /></Suspense>,
+        errorElement: <div>Error loading page</div>,
         children: [
             {
                 index: true,
