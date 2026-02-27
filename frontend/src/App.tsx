@@ -1,20 +1,34 @@
-import ImageComp from './components/imageComp';
-// import { Link } from 'react-router-dom';
-import Button from './components/button';
+import { lazy, Suspense } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import HomePage from "./pages/HomePage";
+// import LandingPage from "./pages/LandingPage";
 
-function App() {
+//Lazy load the pages
+const HomePage = lazy(() => new Promise((resolve) => {
+    setTimeout(resolve, 2000);
+}).then(() => import("./pages/HomePage")));
+const LandingPage = lazy(() => import("./pages/LandingPage"));
 
-  return (
-    <>
-      <div>
-        Hello World Vite
-        <ImageComp />
-        {/* <Link to="/api">About</Link> */}
-        <Button />
-      </div>
+//Define the routes
+const routes = createBrowserRouter([
+    {
+        path: "/",
+        element: <Suspense fallback="Loading...">
+            <HomePage />
+        </Suspense>,
+        children: [
+            {
+                index: true,
+                element: <LandingPage />
+            }
+        ]
+    }
+]);
 
-    </>
-  );
-}
-
+//App component
+const App = () => {
+    return (
+        <RouterProvider router={routes} />
+    );
+};
 export default App;
