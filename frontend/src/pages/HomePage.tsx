@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { HomePageHeaderWrapper } from "../wrappers/homePageHeaderWrapper";
+import { HomePageHeaderWrapper } from "../wrappers/HomePageHeaderWrapper";
 
 const HomePage = () => {
     return (
