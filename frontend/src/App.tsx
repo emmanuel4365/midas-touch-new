@@ -1,13 +1,20 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import HomePage from "./pages/HomePage";
-// import LandingPage from "./pages/LandingPage";
 
 //Lazy load the pages
 const HomePage = lazy(() => new Promise((resolve) => {
     setTimeout(resolve, 2000);
 }).then(() => import("./pages/HomePage")));
+
 const LandingPage = lazy(() => import("./pages/LandingPage"));
+
+const ServicesPage = lazy(() => import("./pages/ServicesPage"));
+
+const GalleryPage = lazy(() => import("./pages/GalleryPage"));
+
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+
+const AboutPage = lazy(() => import("./pages/AboutPage"));
 
 //Define the routes
 const routes = createBrowserRouter([
@@ -19,6 +26,22 @@ const routes = createBrowserRouter([
             {
                 index: true,
                 element: <LandingPage />
+            },
+            {
+                path: "about",
+                element: <AboutPage />
+            },
+            {
+                path: "services",
+                element: <ServicesPage />
+            },
+            {
+                path: "gallery",
+                element: <GalleryPage />
+            },
+            {
+                path: "contact",
+                element: <ContactPage />
             }
         ]
     }

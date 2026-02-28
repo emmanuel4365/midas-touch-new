@@ -1,12 +1,17 @@
 import { Outlet } from "react-router-dom";
-import { HomePageHeaderWrapper } from "../wrappers/HomePageHeaderWrapper";
+import HeaderTopSection from "../components/HeaderTopSection";
+import HeaderLogoNavSection from "../components/HeaderLogoNavSection";
+import { HeaderWrapper } from "../wrappers/HeaderWrapper";
 
 const HomePage = () => {
     return (
         <>
-            <HomePageHeaderWrapper className="homepage-header">HomePage</HomePageHeaderWrapper>
+            <HeaderWrapper className="header">
+                <HeaderTopSection />
+                <HeaderLogoNavSection />
+            </HeaderWrapper>
             <Outlet />
-            <footer className="homepage-footer">Footer</footer>
+            <footer className="footer">Footer</footer>
         </>
     );
 };
