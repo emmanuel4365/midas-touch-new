@@ -34,17 +34,27 @@ export const HeaderWrapper = styled.header`
     }
 
     .display-sidebar {
-        display: none;
+        display: block;
+    }
+
+    .sidebar-nav {
+        position-anchor: --root-container;
+        position: fixed;
+        left: anchor(left);
+        top: anchor(top);
+
     }
 
     .header-logonav {
         width: 95%;
         display: flex;
         justify-content: space-between;
+        padding: var(--padding-sm);
 
     }
 
     /* .sidebar-nav-container {
         margin-left: auto;
     } */
+
 `;

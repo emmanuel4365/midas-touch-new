@@ -161,4 +161,5 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  anchor-name: --root-container;
 }
