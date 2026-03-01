@@ -7,7 +7,7 @@ import phoneIcon from "../assets/images/phone-icon.svg";
 
 const HeaderTopSection = () => {
     return (
-        <section className="header-top centre" aria-label="header top contact section">
+        <section className="header-top centre display-header-top" aria-label="header top contact section">
             <div className="header-top-left">
                 <div className="header-top-left-item1">
                     <img src={mailIcon} alt="mail icon" />

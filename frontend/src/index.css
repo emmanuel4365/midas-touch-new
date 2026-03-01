@@ -136,6 +136,14 @@
   --margin-md: 0.5rem; /* 8px */
   --margin-lg: 1rem; /* 16px */
   --margin-xl: 1.5rem; /* 24px */
+
+  /* Width */
+  --width-xs: 100px;
+  --width-sm: 200px;
+  --width-md: 300px;
+  --width-lg: 400px;
+  --width-xl: 500px;
+  --max-width: 1500px;
 }
 
 body {
@@ -145,4 +153,12 @@ body {
   line-height: var(--line-height-normal);
   color: var(--text-primary);
   background-color: var(--bg-white);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
