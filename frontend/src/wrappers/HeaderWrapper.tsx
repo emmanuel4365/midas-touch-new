@@ -33,16 +33,20 @@ export const HeaderWrapper = styled.header`
         display: none;
     }
 
-    .display-sidebar {
-        display: block;
-    }
-
     .sidebar-nav {
         position-anchor: --root-container;
         position: fixed;
         left: anchor(left);
         top: anchor(top);
+        width: 100vw;
+        height: 100vh;
+        /* background-color: var(--brand-primary-green); */
 
+
+    }
+
+    .sidebar-logo-icon {
+        display: flex;
     }
 
     .header-logonav {
