@@ -17,13 +17,14 @@ export const HeaderWrapper = styled.header`
         display: none;
     }
 
-    .header-top-left-item1, .header-top-left-item2 {
+    .header-top-left-item1, .header-top-left-item2, .sidebar-phone, .sidebar-mail  {
         display: flex;
         padding: var(--padding-xs);
         gap: var(--spacing-xs);
+        color: var(--text-white);
     }
 
-    .header-top-right {
+    .header-top-right, .sidebar-socials {
         display: flex;
         padding: var(--padding-xs);
         gap: var(--spacing-xs);
@@ -40,13 +41,19 @@ export const HeaderWrapper = styled.header`
         top: anchor(top);
         width: 100vw;
         height: 100vh;
-        /* background-color: var(--brand-primary-green); */
+        background-color: var(--brand-primary-green);
+        transform: translateX(-100%);
+        /* animation: sidebarSlideIn 0.3s forwards; */
 
 
     }
 
     .sidebar-logo-icon {
         display: flex;
+        justify-content: space-between;
+        padding: var(--padding-md);
+        /* border-bottom: 1px solid var(--text-white); */
+        border-bottom: 1px solid #6df843;
     }
 
     .header-logonav {
@@ -57,8 +64,69 @@ export const HeaderWrapper = styled.header`
 
     }
 
-    /* .sidebar-nav-container {
-        margin-left: auto;
-    } */
+    .sidebar-nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-nav-link {
+        padding: var(--padding-lg);
+        text-decoration: none;
+        color: var(--text-white);
+        border-radius: var(--radius-lg);
+        margin: auto var(--margin-md);
+        /* background-color: var(--brand-light-green); */
+
+    }
+
+    .sidebar-nav-link:hover {
+        background-color: #75797471;
+    }
+
+    .sidebar-phone {
+        border-bottom: #6df843 1px solid;
+        margin: auto var(--margin-md);
+    }
+
+    .sidebar-mail {
+        /* padding: var(--padding-md); */
+        margin: auto var(--margin-md);
+
+    }
+
+    .sidebar-socials {
+        align-items: center;
+        justify-content: center;
+        gap: var(--spacing-md);
+    }
+
+    .sidebar-copyright {
+        text-align: center;
+        color: var(--text-white);
+        font-size: var(--font-size-xs);
+        margin: var(--margin-md) 0;
+    }
+
+    .active {
+        background-color: #75797471;
+    }
+
+    .home {
+        margin-top: var(--margin-md);
+    }
+
+    .contact {
+        margin-bottom: var(--margin-md);
+    }
+
+    @keyframes sidebarSlideIn {
+        from {
+            transform: translateX(-100%);  
+        }
+        to {
+            transform: translateX(0);  
+        }
+        
+    }
 
 `;
