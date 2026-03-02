@@ -126,7 +126,15 @@ export const HeaderWrapper = styled.header`
         to {
             transform: translateX(0);  
         }
-        
     }
 
+    @keyframes sidebarSlideOut {
+        from {
+            transform: translateX(0);   
+        }
+        to {
+            transform: translateX(-100%); 
+        
+        }
+    }
 `;

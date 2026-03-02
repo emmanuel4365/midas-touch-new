@@ -11,12 +11,11 @@ import phoneIcon from "../assets/images/phone-icon.svg";
 const SideBarNav = () => {
   const closeSideBarNav = () => {
     const sidebarNav = document.querySelector(".sidebar-nav") as HTMLElement;
-    sidebarNav.style.display = "none";
+    sidebarNav.style.animation = "sidebarSlideOut 0.5s forwards";
   };
 
   const openSideBarNav = () => {
     const sidebarNav = document.querySelector(".sidebar-nav") as HTMLElement;
-    sidebarNav.style.display = "block";
     sidebarNav.style.animation = "sidebarSlideIn 0.5s forwards";
   };
 
