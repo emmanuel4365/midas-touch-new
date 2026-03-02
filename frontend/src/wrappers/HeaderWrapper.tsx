@@ -40,7 +40,7 @@ export const HeaderWrapper = styled.header`
         left: anchor(left);
         top: anchor(top);
         width: 100vw;
-        height: 100vh;
+        height: calc(100vh - 46.2px);
         background-color: var(--brand-primary-green);
         transform: translateX(-100%);
         display: flex;
