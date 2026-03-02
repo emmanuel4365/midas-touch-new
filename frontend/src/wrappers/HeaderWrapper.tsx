@@ -43,6 +43,8 @@ export const HeaderWrapper = styled.header`
         height: 100vh;
         background-color: var(--brand-primary-green);
         transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
         /* animation: sidebarSlideIn 0.3s forwards; */
 
 
@@ -98,6 +100,7 @@ export const HeaderWrapper = styled.header`
         align-items: center;
         justify-content: center;
         gap: var(--spacing-md);
+        margin-top: auto;
     }
 
     .sidebar-copyright {
