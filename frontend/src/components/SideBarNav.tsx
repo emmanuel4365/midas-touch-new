@@ -28,11 +28,11 @@ const SideBarNav = () => {
           <CircleX size={40} onClick={closeSideBarNav} className="close-sidebar-icon" color="#ffffff" />
         </div>
         <nav className="sidebar-nav-links" aria-label="sidebar navigation links">
-          <NavLink className="sidebar-nav-link home" to="/">Home</NavLink>
-          <NavLink className="sidebar-nav-link" to="/about">About</NavLink>
-          <NavLink className="sidebar-nav-link" to="/services">Services</NavLink>
-          <NavLink className="sidebar-nav-link" to="/gallery">Gallery</NavLink>
-          <NavLink className="sidebar-nav-link contact" to="/contact">Contact</NavLink>
+          <NavLink className="sidebar-nav-link home" to="/" onClick={closeSideBarNav}>Home</NavLink>
+          <NavLink className="sidebar-nav-link" to="/about" onClick={closeSideBarNav}>About</NavLink>
+          <NavLink className="sidebar-nav-link" to="/services" onClick={closeSideBarNav}>Services</NavLink>
+          <NavLink className="sidebar-nav-link" to="/gallery" onClick={closeSideBarNav}>Gallery</NavLink>
+          <NavLink className="sidebar-nav-link contact" to="/contact" onClick={closeSideBarNav}>Contact</NavLink>
         </nav>
         <div className="sidebar-socials">
           <Link to={"https://www.google.com/"} target="_blank">
