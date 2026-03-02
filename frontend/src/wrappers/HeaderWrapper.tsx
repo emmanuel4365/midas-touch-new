@@ -45,6 +45,7 @@ export const HeaderWrapper = styled.header`
         transform: translateX(-100%);
         display: flex;
         flex-direction: column;
+        
         /* animation: sidebarSlideIn 0.3s forwards; */
 
 
@@ -56,6 +57,12 @@ export const HeaderWrapper = styled.header`
         padding: var(--padding-md);
         /* border-bottom: 1px solid var(--text-white); */
         border-bottom: 1px solid #6df843;
+    }
+
+    .sidebarLinksAndContactInfo {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
     }
 
     .header-logonav {
@@ -141,4 +148,13 @@ export const HeaderWrapper = styled.header`
         }
     }
 
+    @media screen and (min-width: 400px) {
+        .sidebarLinksAndContactInfo {
+            overflow-y: auto;
+        }
+        
+        .sidebar-nav {
+            overflow: hidden;
+        }
+    }
 `;

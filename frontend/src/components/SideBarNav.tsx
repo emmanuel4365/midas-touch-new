@@ -27,41 +27,43 @@ const SideBarNav = () => {
           <img src={MidasLogo} alt="" />
           <CircleX size={40} onClick={closeSideBarNav} className="close-sidebar-icon" color="#ffffff" />
         </div>
-        <nav className="sidebar-nav-links" aria-label="sidebar navigation links">
-          <NavLink className="sidebar-nav-link home" to="/" onClick={closeSideBarNav}>Home</NavLink>
-          <NavLink className="sidebar-nav-link" to="/about" onClick={closeSideBarNav}>About</NavLink>
-          <NavLink className="sidebar-nav-link" to="/services" onClick={closeSideBarNav}>Services</NavLink>
-          <NavLink className="sidebar-nav-link" to="/gallery" onClick={closeSideBarNav}>Gallery</NavLink>
-          <NavLink className="sidebar-nav-link contact" to="/contact" onClick={closeSideBarNav}>Contact</NavLink>
-        </nav>
-        <div className="sidebar-socials">
-          <Link to={"https://www.google.com/"} target="_blank">
-            <img src={facebookIcon} alt="facebook icon" className="sidebar-facebook" />
-          </Link>
-          <Link to={""}>
-            <img src={instagramIcon} alt="instagram icon" className="sidebar-instagram" />
-          </Link>
-          <Link to={""}>
-            <img src={linkedinIcon} alt="linkedin icon" className="sidebar-linkedin" />
-          </Link>
-        </div>
-        <div className="sidebar-contact-info">
-          <div className="sidebar-mail">
-            <img src={mailIcon} alt="mail icon" />
-            <span>
-              midastouchconsult33@gmail.com
-            </span>
+        <div className="sidebarLinksAndContactInfo">
+          <nav className="sidebar-nav-links" aria-label="sidebar navigation links">
+            <NavLink className="sidebar-nav-link home" to="/" onClick={closeSideBarNav}>Home</NavLink>
+            <NavLink className="sidebar-nav-link" to="/about" onClick={closeSideBarNav}>About</NavLink>
+            <NavLink className="sidebar-nav-link" to="/services" onClick={closeSideBarNav}>Services</NavLink>
+            <NavLink className="sidebar-nav-link" to="/gallery" onClick={closeSideBarNav}>Gallery</NavLink>
+            <NavLink className="sidebar-nav-link contact" to="/contact" onClick={closeSideBarNav}>Contact</NavLink>
+          </nav>
+          <div className="sidebar-socials">
+            <Link to={"https://www.google.com/"} target="_blank">
+              <img src={facebookIcon} alt="facebook icon" className="sidebar-facebook" />
+            </Link>
+            <Link to={""}>
+              <img src={instagramIcon} alt="instagram icon" className="sidebar-instagram" />
+            </Link>
+            <Link to={""}>
+              <img src={linkedinIcon} alt="linkedin icon" className="sidebar-linkedin" />
+            </Link>
           </div>
-          <div className="sidebar-phone">
-            <img src={phoneIcon} alt="phone icon" />
-            <span>
-              09166661459
-            </span>
+          <div className="sidebar-contact-info">
+            <div className="sidebar-mail">
+              <img src={mailIcon} alt="mail icon" />
+              <span>
+                midastouchconsult33@gmail.com
+              </span>
+            </div>
+            <div className="sidebar-phone">
+              <img src={phoneIcon} alt="phone icon" />
+              <span>
+                09166661459
+              </span>
+            </div>
           </div>
+          <p className="sidebar-copyright">
+            &copy; {new Date().getFullYear()} The Midas Touch Consultancy.
+          </p>
         </div>
-        <p className="sidebar-copyright">
-          &copy; {new Date().getFullYear()} The Midas Touch Consultancy.
-        </p>
       </aside>
     </section>
   );
